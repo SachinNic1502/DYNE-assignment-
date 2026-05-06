@@ -42,10 +42,15 @@ const theme = createTheme({
           fontWeight: 600,
           padding: '8px 16px',
         },
-        containedPrimary: {
-          boxShadow: '0 4px 6px -1px rgb(99 102 241 / 0.1), 0 2px 4px -2px rgb(99 102 241 / 0.1)',
-        },
       },
+      variants: [
+        {
+          props: { variant: 'contained', color: 'primary' },
+          style: {
+            boxShadow: '0 4px 6px -1px rgb(99 102 241 / 0.1), 0 2px 4px -2px rgb(99 102 241 / 0.1)',
+          },
+        },
+      ],
     },
     MuiPaper: {
       styleOverrides: {
